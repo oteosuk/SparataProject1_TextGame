@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TextGame
+﻿namespace TextGame
 {
     public class Character
     {
@@ -107,10 +105,9 @@ namespace TextGame
             int padding = totalLength - currentLength;
             return str.PadRight(str.Length + padding);
         }
-
     }
 
-    internal class Program
+    class TextGameMain
     {
         static Character _player;
         static Item[] _items;
@@ -332,7 +329,7 @@ namespace TextGame
         static void PrintStartLogo()
         {
             Console.BackgroundColor = ConsoleColor.Gray;
-            Console.ForegroundColor = ConsoleColor.Red; 
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("==================================================================================");
             Console.WriteLine(" ___________  ___  ______ _____ ___   ______ _   _ _   _ _____  _____ _____ _   _ ");
             Console.WriteLine("/  ___| ___ \\/ _ \\ | ___ \\_   _/ _ \\  |  _  \\ | | | \\ | |  __ \\|  ___|  _  | \\ | |");
